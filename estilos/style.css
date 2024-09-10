@@ -1,0 +1,378 @@
+@charset "UTF-8";
+:root{
+    --bodybackground:#D5D8D1;
+    --cor-paragrafos:#121040;
+    --cor-cor-destaque-01:#926348;
+    --cor-cor-destaque-02:#816252e0;
+    --cor-destaque-conteudo:#9263484b;
+    --cor-btn:#15A719;
+    --cor-hover:#199c1d;
+
+    --gradiente:linear-gradient(180deg,#C1AC97,#D5D8D1,#d8dbd4);
+    --font-01:"Montserrat Alternates", sans-serif;
+    --font-02:"Montserrat", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;400&display=swap');
+
+/* Estilos Globais */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: var(--corlinks);
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: var(--bodybackground);
+}
+
+hr{
+    width: 80%;
+    margin: 0 auto;
+    grid-column: 1/3;
+    background-color: #a675582d;
+    height: 1px;
+    border: none;
+}
+
+
+p, li{
+    color: var(--cor-paragrafos);
+    font-family: var(--font-02);
+}
+
+h2{
+    color: var(--cor-cor-destaque-01);
+    font-family: var(--font-01);
+}
+
+h4{
+    font-family:var(--font-02);
+    font-size: .9rem;
+    font-weight: 100;
+}
+
+span{
+    margin: 10px;
+}
+
+.material-symbols-outlined {
+    color: #fff;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.btn-cta{
+    background-color: var(--cor-btn);
+    margin: 30px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cta:hover{
+    background-color: var(--cor-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-cta a{
+    color: #fff;
+} 
+
+i{
+    font-size: .9rem;
+    background-color: var(--cor-destaque-conteudo);
+}
+
+/* Estilos Home */
+.content{
+    padding: 10px;
+}
+
+.background{
+    background: url('../midias/img-fundo-home.jpg') no-repeat ;
+    background-size: cover;
+    background-position: center center;
+
+    display: grid;
+    grid-template-columns: minmax(270px,1fr) 1fr;
+   
+}
+
+.home{
+    height: 450px;
+    text-align: center;
+}
+.home h1{
+    color: var(--cor-cor-destaque-01);
+    font-family:var(--font-01);
+    font-size: 2.3rem;
+    font-weight: 700;
+    font-variant: small-caps;
+    margin: 30px;
+}
+
+.home h2{
+    color: var(--cor-cor-destaque-02);
+    font-size: 1.3rem;
+    font-variant: normal;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+.hr-home{
+    width: 50%;
+}
+
+.home p{
+    margin: 10px;
+    padding: 5px;
+    color: var(--cor-paragrafos);
+    font-family: var(--font-02);
+}
+/* Sobre o produto */
+.sobre-produto{
+   margin: 150px 40px;
+   display: grid;
+   justify-content: center;
+}
+
+.sobre-produto h2{
+    margin-bottom: 15px;
+}
+
+.sobre-produto ul{
+    display: grid;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.sobre-produto ul li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--cor-destaque-conteudo);
+    box-shadow: 0px 1px 1px 1px var(--cor-destaque-conteudo);
+}
+
+/* Info Distúrbio */
+.disease-info{
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 700px;
+}
+
+.disease-info h2{
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+}
+
+.disease-info #info2{
+    margin-top: 80px;
+}
+
+.disease-info p{
+    margin: 20px 0px;
+    text-indent: 1rem;
+}
+
+.disease-info #info2 a {
+    font-size: .7rem;
+}
+
+.video-disease{
+    display: grid;
+    justify-content: center;
+    border-radius: 30px;
+    margin: 70px 0px;
+    box-shadow: 0px 1px 1px 1px var(--cor-destaque-conteudo);
+}
+
+.video-disease video{
+    width: 400px;
+    height: 300px;
+}
+
+/* Estilos Seção Produto */
+.sobre-produto02{
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.sobre-produto02 h1{
+    font-family: var(--font-02);
+}
+
+.sobre-produto02 h2{
+    font-family: var(--font-01);
+    color: var(--cor-cor-destaque-01);
+    margin: 15px 0px;
+}
+
+.sobre-produto02 p{
+    margin: 25px 0px;
+    padding: 10px;
+}
+
+.sobre-produto02 .img-01{
+    background: url('../midias/img0001.png');
+    max-width: 450px;
+    height: 380px;
+    background-size: cover;
+    background-position: center center;
+
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px 1px var(--cor-destaque-conteudo);
+}
+
+#btn-diase02 a{
+    font-size: 1.9rem;
+}
+
+.sobre{
+    margin: 150px auto;
+    max-width: 700px;
+    display: grid;
+    height: 400px;
+    justify-content: center;
+}
+
+#sobre h1{
+    font-family: var(--font-01);
+    font-size: 1.8rem;
+    color: var(--cor-cor-destaque-02);
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+#sobre p{
+    margin: 30px;
+}
+
+.info-prof{
+    font-size: .7rem;
+}
+
+.img-fundo-sobre{    
+    background:url('../midias/img-fundo-sobre.jpg') no-repeat center center ;
+    background-size: cover;
+    
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* Estilos Sobre o que o programa oferece */
+.produto-container{
+    max-width: 600px;
+    margin: auto;
+    padding: 15px;
+}
+.sobre-tratamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor-cor-destaque-01);
+    height: 600px;
+    margin: 300px 0px 150px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px 1px var(--cor-destaque-conteudo);
+}
+
+.sobre-tratamento h2{
+    font-family: var(--font-01);
+    margin-bottom: 20px;
+    color: var(--cor-paragrafos);
+}
+
+.sobre-tratamento h3{
+    font-family: var(--font-02);
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.sobre-tratamento ul{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.sobre-tratamento li{
+    color: #fff;
+    text-align: justify;
+}
+
+.sobre-tratamento .btn-cta{
+    font-size: 1rem;
+}
+
+/* Estilos de benefícios do programa */
+.sobre-beneficios{
+    height: max-content;
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+
+    border: 1px solid var(--cor-destaque-conteudo);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px var(--cor-destaque-conteudo);
+}
+
+.sobre-beneficios h2{
+    margin-bottom: 25px;
+}
+
+.sobre-beneficios ul{
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+}
+
+.sobre-beneficios .preco-post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    border: 1px solid var(--cor-destaque-conteudo);
+    border-radius: 10px;
+}
+
+.sobre-beneficios .preco-post h1{
+    font-size: 2rem;
+    color: var(--cor-cor-destaque-01);
+}
+
+.sobre-beneficios .preco-post h3{
+    color: var(--cor-cor-destaque-02);
+    font-size: 1.6rem;
+}
+
+.sobre-beneficios .preco-post p{
+    color: black;
+    font-size: 1rem;
+}
