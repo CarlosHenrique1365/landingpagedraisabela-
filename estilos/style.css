@@ -376,3 +376,78 @@ i{
     color: black;
     font-size: 1rem;
 }
+/* Estilo SObre */
+.about{
+    padding: 10px;
+    max-width: 600px;
+    margin:100px auto;
+}
+
+.about h4{
+    margin-top: 80px;
+}
+
+.about h2{
+    margin:20px 0px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.about h3{
+    font-family: var(--font-02);
+
+}
+
+.about h1{
+    font-family: var(--font-02);
+    color:var(--cor-cor-destaque-02);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.about p{
+    margin: 5px;
+    font-size: .8rem
+}
+
+.img-about{
+    background-size: cover;
+    margin: 15px auto;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+#img-about-01{
+    background: url('../midias/img-about.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* estilo "Aviso" */
+
+.aviso{
+    background-color: var(--cor-cor-destaque-01);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo Garantia Produto */
+.garantia-produto{
+    background-color: var(--cor-cor-destaque-01);
+    display: grid;
+    align-content: center;
+    text-align: center;
+    height: 300px
+}
+
+.garantia-produto p{
+    color: #fff;
+   font-size: 1.2rem; 
+}
+
+.arte{
+    border: 1px solid silver;
+    border-radius: 50%;
+    width: 400px;
+    margin: 0 auto;
+}
