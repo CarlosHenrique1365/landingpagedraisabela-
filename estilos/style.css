@@ -29,7 +29,9 @@
     box-sizing: border-box;
     
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--bodybackground);
 }
@@ -146,9 +148,30 @@ i{
     color: var(--cor-paragrafos);
     font-family: var(--font-02);
 }
+
+@keyframes subirDescer {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#seta-down{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    animation: subirDescer 3s ease-in-out infinite;
+}
+
 /* Sobre o produto */
 .sobre-produto{
-   margin: 150px 40px;
+   margin: 100px 40px;
    display: grid;
    justify-content: center;
 }
@@ -248,7 +271,7 @@ i{
 }
 
 .sobre{
-    margin: 150px auto;
+    margin: 100px auto;
     max-width: 700px;
     display: grid;
     height: 400px;
@@ -294,7 +317,7 @@ i{
     flex-direction: column;
     background-color: var(--cor-cor-destaque-01);
     height: 600px;
-    margin: 300px 0px 150px 0px;
+    margin: 100px 0px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 1px 1px 1px var(--cor-destaque-conteudo);
@@ -376,15 +399,11 @@ i{
     color: black;
     font-size: 1rem;
 }
-/* Estilo SObre */
+/* Estilo Sobre */
 .about{
     padding: 10px;
     max-width: 600px;
-    margin:100px auto;
-}
-
-.about h4{
-    margin-top: 80px;
+    margin:80px auto;
 }
 
 .about h2{
@@ -422,14 +441,6 @@ i{
     background-size: cover;
 }
 
-/* estilo "Aviso" */
-
-.aviso{
-    background-color: var(--cor-cor-destaque-01);
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
 
 /* Estilo Garantia Produto */
 .garantia-produto{
@@ -437,7 +448,7 @@ i{
     display: grid;
     align-content: center;
     text-align: center;
-    height: 300px
+    height: min-content;
 }
 
 .garantia-produto p{
@@ -447,7 +458,7 @@ i{
 
 .arte{
     border: 1px solid silver;
-    border-radius: 50%;
+    border-radius: 5px;
     width: 400px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
