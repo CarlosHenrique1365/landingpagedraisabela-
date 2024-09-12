@@ -441,6 +441,10 @@ i{
     background-size: cover;
 }
 
+#img-about-02{
+    background: url('../midias/img-about-02.jpeg') no-repeat center center;
+    background-size: cover;
+}
 
 /* Estilo Garantia Produto */
 .garantia-produto{
@@ -461,4 +465,15 @@ i{
     border-radius: 5px;
     width: 400px;
     margin: 10px auto;
+}
+
+/* Footer */
+footer{
+    background-color: var(--cor-cor-destaque-01);
+    padding: 10px;
+    font-size: .6rem;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid rgba(192, 192, 192, 0.466);
 }
